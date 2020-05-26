@@ -1,0 +1,610 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Righteous', cursive;
+}
+/* ...............     header     ................... */
+header
+{
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+.container
+{
+    width: 80%;
+    margin: auto;
+
+}
+.imgh
+{
+    float: left;
+    width: 30%;
+    
+}
+.imgh img 
+{
+    width: 90px;
+    height: 60px;
+}
+/* ........ nav ........*/
+.nav
+{
+    float: left;
+    list-style: none;
+    display: block;
+    text-align: right;
+    right: 20px;
+    width: 70%;
+}
+.nav > li
+{
+    display: inline-block;
+}
+
+.nav > li > a
+{
+    text-decoration: none;
+    padding: 30px 14px;
+    display: block;
+    color: #fff;
+}
+.nav > li > a:after
+{
+    content: "";
+    display: block;
+    height: 3.5px;
+    width: 0;
+    background-color: teal;
+    transition: 0.5s;
+}
+.nav > li > a.hover:after
+{
+    content: "";
+    display: block;
+    height: 3.5px;
+    width: 100%;
+    background-color: teal;
+    transition: 0.5s;
+}
+.nav > li > a:hover:after
+{
+    width: 100%;
+}
+.dropdown
+{
+    position: relative;
+}
+.drop-menu
+{
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    background-color: teal;
+    text-align: center;
+    width: 120px;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropdown:hover .drop-menu
+{
+    opacity: 1;
+    visibility: visible;
+}
+.drop-menu a
+{
+text-decoration: none;
+color: #fff;
+display: block;
+padding: 10px;
+}
+
+.clear {clear: both;}
+/* ...............     end nav     ................... */
+
+/* ...............    end header     ................... */
+
+/*.............     start home section      ............ */
+.home
+{
+    background-image: url(../images/background/background1.webp);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.home-content
+{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.titel
+{
+    font-size: 54px;
+}
+.titel-p
+{
+margin: 15px 0;
+line-height: 21px;
+}
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+}
+.bthover
+{
+    transition: opacity 0.5s;
+}
+.bthover:hover
+{
+opacity: 0.6;
+}
+.btn
+{
+    font-size: 20px;
+    width: 160px;
+    padding: 15px 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn-1
+{
+    background-color: teal;
+    color: seashell;
+}
+.btn-2
+{
+    background-color: #fff;
+    color: teal;
+}
+/* ...............     end home section     ................... */
+
+/* ...............     اشياء مشتركة     ................... */
+.comon-title
+{
+    font-size: 40px;
+    color: #000;
+    margin-bottom:6.5px ;
+}
+.line
+{
+    background-color: teal;
+    height: 5px;
+    width: 70px;
+    display: block;
+    margin: 0 auto 40px auto;
+}
+.pd-y
+{
+    padding: 75px 0;
+}
+/* ...............     about section     ................... */
+.clear
+{
+    clear: both;
+}
+.about-item
+{
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid gainsboro;
+    padding: 50px 20px 0 20px;
+    margin: 17px;
+}
+.about-item mg
+{
+    margin: 0 5%;
+}
+.about-item .icon
+{
+    color: teal;
+    margin-bottom: 10px;
+}
+.item-title
+{
+    margin-bottom: 10px;
+
+}
+.item-p
+{
+    margin-bottom: 10px;
+    line-height: 1.3;
+    color: rgb(163, 163, 163);
+}
+.item-link
+{
+    color: teal;
+}
+.ltr-effect
+{
+position: relative;
+
+}
+.ltr-effect:after 
+{
+content: "";
+position: absolute;
+transition: 0.5s;
+width: 0;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+background-color: rgb(104, 104, 104);
+z-index: -1;
+}
+.ltr-effect:hover::after{
+    width:100%;
+}
+
+
+    /* .............  تكرار لفكرة about ......... */
+    .tb-effect
+    {
+    position: relative;
+    
+    }
+    .tb-effect:after 
+    {
+    content: "";
+    position: absolute;
+    transition: 0.5s;
+    width: 100%;
+    top: 0;
+    height: 0;
+    left: 0;
+    background-color: rgb(24, 23, 23);
+    z-index: -1;
+    
+    }
+    .tb-effect:hover::after{
+        height:100%;
+    }
+/* ...............   end تكرار ابوت سكشنn     ................... */
+
+.about-item:hover .item-title
+{
+color: white;
+}
+/* ...............   end about section     ................... */
+/* ...............    portfolio section     ................... */
+
+.portfolio-content
+{
+}
+.portfolio-item
+{
+    float: left;
+    width: 30%;
+    margin-bottom: 40px;
+    position: relative;
+}
+.portfolio-item img 
+{
+    width: 100%;
+}
+.portfolio-item.mg 
+{
+   margin: 0 40px;
+}
+.layer-content
+{
+    background-color: rgba(85, 102, 102, 0.457);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+.portfolio-item:hover .layer-content
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.layer-info
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.layer-info .category
+{
+font-size: 32px;
+color: rgb(78, 177, 177);
+}
+.layer-content-title
+{
+    color: white;
+}
+.layer-info > i
+{
+    padding: 10px;
+    background-color: rgb(78, 184, 184);
+    color: white ;
+}
+/* ............... end  portfolio section     ................... */
+
+/* ...............    service section     ................... */
+.service
+{
+    background-color: #f9f9f9;
+}
+.service-item
+{
+    float: left;
+    width: 50%;
+
+}
+.clear
+{
+    clear: both;
+}
+.service-item .section-header
+{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.service-item .section-header  .line
+{
+    margin: 10px 0 50px 10px;
+}
+.service-item .section-header .section-title
+{
+    font-size: 31px;
+    letter-spacing: 2px;
+}
+.service-item-p
+{
+   padding-right: 20px;
+   color: #999;
+   line-height: 1.3;
+   font-size: 17px; 
+   margin-bottom: 25px;
+}
+.service-list
+{
+    list-style: none;
+}
+.service-list li
+{
+    margin-bottom: 15px;
+    color: #777;
+    font-weight: 100;
+    font-size: 16px;
+}
+.service-list i
+{
+    border: 2px solid rgb(39, 128, 128);
+    color: cadetblue;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+/* ............... end service section     ................... */
+.numbers
+{
+    position: relative;
+    width: 100%;
+    background-image: url(../images/background/background2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+
+}
+.numbers.pd
+{
+    margin: 0 0 80px 0;
+}
+.overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.container
+{
+    position: relative;
+}
+.container.mg
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.numbers-item
+{
+    float: left;
+    width: 24%;
+}
+.numbers-item i
+{
+    color: cornflowerblue;
+    margin-bottom: 20px;
+}
+.numbers-span
+{
+    color: cornsilk;
+    font-size: 14px;
+
+}
+.numbers-span.nm
+{
+    font-size: 30px;
+}
+/* ............... end number section     ................... */
+/* ...............  team section     ................... */
+.team
+{
+
+}
+.team-content
+{
+
+}
+.team-item
+{
+    width: 30%;
+    float: left;
+    background-color: #e8e8e8;
+    padding: 25px 10px;
+    text-align: center;
+}
+.team-item .team-img
+{
+    margin: auto;
+    width: 90%;
+    position: relative;
+
+}
+.team-item .team-img img
+{
+    margin: auto;
+    width: 100%;  
+}
+.team-item.mg
+{
+    margin: auto 20px auto auto;
+}
+.team-info-text
+{
+    color: #999;
+    font-size: 13px;
+}
+.team-overlay
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 1.8%;
+    left: 0;
+    display: block;
+    background-color: rgba(2, 2, 2, 0.589);
+    opacity: 0;
+    visibility: hidden;
+}
+.team-overlay a
+{
+    display: block;
+    padding: 10px;
+    background-color: rgb(71, 192, 192);
+    color: wheat;
+    border: 0.5px;
+    text-decoration: none;
+    height: 40px ;
+    width: 40px;
+    margin-left: auto;
+    opacity: 0;
+    visibility: hidden;
+}
+.team-item:hover .team-overlay 
+{
+    opacity: 1;
+    visibility: visible; 
+}
+.team-item:hover .team-overlay a
+{
+    opacity: 1;
+    visibility: visible; 
+}
+.team-item:hover .team-info-title
+{
+    color: white;
+}
+.team-item:hover .team-info-text
+{
+    color: teal;
+}
+.team-item.tb-effect
+{
+    z-index: 1;
+}
+/* .......... contact section .........  */
+.comon-title.margin
+{
+    margin-left: -100px;
+}
+.contact-div
+{
+    float: left;
+    width: 40%;
+    margin-left: 20px;
+}
+iframe
+{
+    float: left;
+    width: 58%;
+    height: 350px;
+    margin-bottom: 87px;
+}
+.contact-content
+{
+    margin-bottom: 27px;
+    line-height: 25px;
+    
+
+    
+}
+
+.icon
+{
+    float: left;
+    width: 12%;
+    color: rgb(39, 128, 128);
+}
+.inffo
+{
+    float: left;
+    width: 30%;
+    padding-left: 15px;
+
+}
+/*  ............ end contact section .........*/
+
+/*  ............  footer section .........*/
+
+.footer-ul i
+{
+    border: 2px solid rgb(75, 160, 160);
+    background-color:rgb(75, 160, 160 );
+    color: rgb(227, 239, 240);
+    border-radius: 50%;
+    padding: 6px;
+
+}
+footer
+{
+    background-color: rgb(10, 9, 9);
+    height: 225px;
+    width: 100%;
+}
+footer i
+{
+    color: red;
+}
+footer p
+{
+    color: #999;
+}
+/*  ............ end footer section .........*/
+header:hover + section
+{
+    background-color: rgba(0, 0, 0, 0.75);
+}
